@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= plant.name %></title>
+  </head>
+  <body>
+    <h1><%= plant.name %></h1>
+    <p><%= plant.description %></p>
+    <% if (plant.image) { %>
+      <img src="<%= plant.image %>" alt="<%= plant.name %>" width="200" />
+    <% } %>
+
+    <form action="/plants/<%= plant._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete <%= plant.name %></button>
+    </form>
+    <a href="/plants/<%= plant._id %>/edit">Edit <%= plant.name %></a>
+    <a href="/plants">Back to Plants</a>
+  </body>
+</html>

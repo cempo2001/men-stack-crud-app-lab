@@ -1,0 +1,30 @@
+{
+  "name": "men-stack-crud-app-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cempo2001/men-stack-crud-app-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cempo2001/men-stack-crud-app-lab/issues"
+  },
+  "homepage": "https://github.com/cempo2001/men-stack-crud-app-lab#readme",
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "ejs": "^7.0.1",
+    "express": "^5.3.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.11.2",
+    "morgan": "^1.12.1"
+  }
+}
